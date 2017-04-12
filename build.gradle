@@ -1,0 +1,22 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group = 'test.quick'
+version = '0.0.1'
+
+description = 'Gradle Quick Test'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.scala-lang:scala-library:2.11.8'
+  compile 'ch.qos.logback:logback-classic:1.1.7'
+  compile 'com.typesafe:config:1.3.1'
+}
+
+mainClassName = "test.quick.Main"
